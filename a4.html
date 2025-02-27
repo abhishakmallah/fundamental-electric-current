@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fundamentals of Electricity</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Welcome to the Fundamentals of Electricity</h1>
+        <nav>
+            <ul>
+                <li><a href="#current">Electric Current</a></li>
+                <li><a href="#voltage">Voltage</a></li>
+                <li><a href="#power">Power</a></li>
+                <li><a href="#work">Work & Energy</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="current">
+        <h2>Electric Current</h2>
+        <p>Electric current is the flow of electric charge. It is measured in amperes (A). The formula for electric current is:</p>
+        <pre>Current (I) = Charge (Q) / Time (t)</pre>
+        <div class="calculator">
+            <h3>Calculate Current</h3>
+            <input type="number" id="charge" placeholder="Charge (Q) in Coulombs">
+            <input type="number" id="time" placeholder="Time (t) in Seconds">
+            <button onclick="calculateCurrent()">Calculate Current (A)</button>
+            <p id="current-result"></p>
+        </div>
+    </section>
+
+    <section id="voltage">
+        <h2>Voltage</h2>
+        <p>Voltage (or potential difference) is the force that pushes electric charges to flow in a circuit. It is measured in volts (V). The formula for voltage is:</p>
+        <pre>Voltage (V) = Current (I) × Resistance (R)</pre>
+        <div class="calculator">
+            <h3>Calculate Voltage</h3>
+            <input type="number" id="current-input" placeholder="Current (I) in Amperes">
+            <input type="number" id="resistance" placeholder="Resistance (R) in Ohms">
+            <button onclick="calculateVoltage()">Calculate Voltage (V)</button>
+            <p id="voltage-result"></p>
+        </div>
+    </section>
+
+    <section id="power">
+        <h2>Power</h2>
+        <p>Power is the rate at which work is done or energy is transferred. It is measured in watts (W). The formula for power is:</p>
+        <pre>Power (P) = Voltage (V) × Current (I)</pre>
+        <div class="calculator">
+            <h3>Calculate Power</h3>
+            <input type="number" id="voltage-input" placeholder="Voltage (V) in Volts">
+            <input type="number" id="current-input-power" placeholder="Current (I) in Amperes">
+            <button onclick="calculatePower()">Calculate Power (W)</button>
+            <p id="power-result"></p>
+        </div>
+    </section>
+
+    <section id="work">
+        <h2>Work & Energy</h2>
+        <p>Work done or energy transferred by electric current is given by:</p>
+        <pre>Work (W) = Power (P) × Time (t)</pre>
+        <div class="calculator">
+            <h3>Calculate Work</h3>
+            <input type="number" id="power-input" placeholder="Power (P) in Watts">
+            <input type="number" id="time-input" placeholder="Time (t) in Seconds">
+            <button onclick="calculateWork()">Calculate Work (Joules)</button>
+            <p id="work-result"></p>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Fundamentals of Electricity. All Rights Reserved.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
